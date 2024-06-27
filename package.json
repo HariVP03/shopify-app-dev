@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "A set of tools to kickstart Shopify app development.",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -13,7 +11,11 @@
     }
   },
   "scripts": {
-    "build": "tsc"
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "version": "npm publish"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +24,8 @@
   },
   "devDependencies": {
     "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.7"
   }
 }
