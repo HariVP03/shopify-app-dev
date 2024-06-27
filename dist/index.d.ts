@@ -1,1 +1,1 @@
-export declare const testPackage: () => string;
+export * from "./providers/auth/server";

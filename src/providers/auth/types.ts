@@ -2,7 +2,7 @@ export type CheckResponse = {
   authenticated: boolean;
   redirectTo?: string;
   logout?: boolean;
-  error?: RefineError | Error;
+  error?: Error;
 };
 
 export type OnErrorResponse = {
