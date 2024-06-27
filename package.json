@@ -1,6 +1,6 @@
 {
   "name": "shopify-dev-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Shopify auth implemented with Vercel KV",
   "main": "dist/index.js",
   "files": ["dist"],
