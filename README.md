@@ -12,6 +12,7 @@ This package provides a simple implementation of Shopify authentication using Ve
 
 ```bash
 npm install shopify-dev-tools
+```
 
 ## Usage
 
